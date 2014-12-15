@@ -1,0 +1,1335 @@
+/*@import url(http://fonts.googleapis.com/css?family=Kite+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300);
+*/
+html{
+  min-width: 100%;
+  height: 100%;
+  margin: 0;
+  
+}
+body{
+  min-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  overflow-y: hidden;
+
+}
+.loader{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 999;
+
+}
+.strong{font-weight: 400;}
+/*.scroll {
+position: fixed;
+top: 0;
+z-index: 0;
+}
+*/
+/**********
+Signup page
+**********/
+//@import url(signup.less);
+@-webkit-keyframes bgscroll {
+  from {background-position:0 0;}
+  to {background-position: -3000000000000px 0;}
+}
+
+.mainContainer{
+  width: 100%;
+  height: 100%;
+ // background: url(http://37.187.20.195/~streetzer/layout/img/bg_home.jpg)right top no-repeat;
+  background: url(http://37.187.20.195/~streetzer/layout/img/bghome_wall.jpg)center center;
+   -webkit-animation:bgscroll 1000000s  linear;
+   -moz-animation: bgscroll 1000000s  linear;
+  animation: bgscroll 1000000s  linear;
+  background-size: cover;
+  -webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+  }
+#display_connexion{
+
+  float: right;
+
+}
+.header{
+
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  height: 50px;
+  position: relative;
+  top: 0;
+}
+
+.contentHeader{
+  width: 960px;
+  margin: 0 auto;
+  color: white;
+  
+form{
+
+
+}
+  h1{
+    font-family: "flood-std",sans-serif;
+    padding: 8px 0 0 0;
+    font-size: 35px;
+  }
+  a{
+    margin: 10px 0 0 0;
+    font-family: "franklin-gothic-urw",sans-serif;
+    font-size: 16px;
+    color: transparent;
+    float: right;
+    font-weight: 100;
+  }
+}
+
+#welcome{
+  position: relative;
+  font-size: 1em;
+  color: black;
+}
+.log_fallback{
+
+  display: block!important;
+}
+.welcome_connexion{
+  position: relative;
+  //top: 2000px;
+  display: none;
+
+  form{
+
+    width: 400px;
+
+  input[type="submit"]{
+
+    font-size: 25px;
+  }
+  }
+}
+.decalageLeft{margin: 0 0 0 100px; } 
+.welcome_signup{
+  width: 960px;
+  margin: 0 auto;
+
+  p{
+    font-family: "franklin-gothic-urw",sans-serif;
+    color: white;
+    font-size:3em;
+    font-weight: 100;
+  
+  }
+}
+.spacer{
+
+  width: 100%;
+  height: 200px;
+}
+
+form{
+  /*margin: 80px 0 0 100px;
+  width: 350px;
+  position: relative;
+*/
+
+  p{
+
+
+  }
+  label{
+    /*font-size: 0.4em;*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: relative;
+  top: 4px;
+
+
+  }
+  input{
+  /*  float: right;*/
+    border: none;
+    background: rgba(255,255,255,0.3);
+    border-bottom: 1px solid white;
+    
+    color: white;
+    font-size: 12px;
+
+  }
+
+  input[type=submit]{
+    font-size:12px;
+    font-weight: 300;
+    height: auto;
+    color: black;
+    background: white;
+    border: none;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    -webkit-opacity: 0.6;
+
+    &:hover{
+    opacity: 1;
+    -moz-opacity: 1;
+    -webkit-opacity: 1;    
+    }
+  }
+}
+
+
+.inscription_next{
+
+margin: 0 0 0 100px!important;
+width: 450px!important;
+
+}
+
+.clear{clear: both;}
+
+
+@media only screen and (max-height: 750px) {
+
+  .spacer{
+    height: 100px;
+  }
+ }
+
+/*********
+End signup page
+*********/
+/**********
+Home page
+**********/
+//@import url(home.less); A IMPORTER QUAND CE NE BOUGE PLUS
+ .blocHaut, .blocBas{
+
+  width: 85%;
+  height: 250px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: black;
+  -webkit-box-shadow: 0 0 20px 5px rgba(0,0,0,0.1);
+box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+ }
+ .blocHaut{
+
+  position: absolute;
+  top: -242px;
+ }
+ .containerMessages{
+  width: 100%;
+  height: 100%;
+  margin: 5% 0 0 5%;
+  position: absolute;
+
+  .listeInsideOnline{
+
+  width: 40%;
+  height: 100%;
+  border: 1px solid white;
+  float: left;
+  overflow: auto;
+  }
+  .contentMessages{
+
+    width: 69%;
+    height: 100%;
+    border: 1px solid red;
+    float: right;
+  }
+
+ }
+ .blocBas{
+
+  position: fixed;
+  width: 250px;
+  bottom: -242px;
+    z-index: 50;
+ }
+
+ .selectLane{
+
+  position: absolute;
+  left: 133px;
+  top: 30px;
+
+  p:hover{
+
+    color: #e7434b;
+  }
+}
+
+ 
+.sidebar{
+
+  width: 260px;
+  height: 100%;
+  background:  url(http://37.187.20.195/~streetzer/layout/img/bgsidebar.png);
+  position: fixed;
+  left: 0;
+  color: white;
+  z-index: 20;
+  font-family: "franklin-gothic-urw",sans-serif;
+ 
+  opacity: 0.99;
+  -webkit-opacity: 0.99;
+  -moz-opacity: 0.99;
+  
+
+
+
+  h1{
+    font-size: 34px;
+    padding: 20px 0 0 10px;
+    font-family: "flood-std",sans-serif;
+  }
+
+  ul{
+    font-size: 1.3em;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    text-transform: none;
+    padding: 15px 0 0 0;
+
+    li{
+      width: 70%;
+      text-align: left!important;
+      cursor: pointer;
+      border-bottom: 1px solid white;
+      padding: 12% 0 14% 30%;
+
+            &:hover{
+
+        color: #e7434b;
+      }
+
+    
+
+    }
+    .choixLane{
+
+    
+    }
+  
+  .laneWorld, .laneFriends{
+
+    position: relative;
+   
+  }
+    b{
+
+      font-weight: 800; 
+    }
+
+    li{
+      //margin: 20px 0 0 20px;
+    }
+
+  }
+  form{
+    margin: 0;
+  }
+  label{
+
+    font-size: 16px;
+
+  }
+
+  input{
+    float: none;
+    margin: 0;
+    border-radius: 2px;
+  }
+}
+.laneFriends{
+  margin: 8px 0 0 0;
+}
+.logOut{
+
+  position: fixed;
+  width: 260px;
+  height:35px;
+  border-bottom: 3px solid #e7434b;
+  bottom: 0;
+  background: rgba(0,0,0,1);
+  z-index: 50;
+  a{
+
+    font-size: 0.5em;
+    margin: 10px 0 0 40px;
+    color: white;
+    text-decoration: none;
+  }
+}
+.welcomeUser{
+width: 100%;
+position: relative;
+height: 45.333333%;
+background: rgba(0,0,0,0.9);
+
+
+}
+
+
+.welcome{
+position: absolute;
+margin: 10px 0 0 5px;
+font-size: 0.5em!important;
+color: black;
+
+}
+.profilPic{
+  border-radius: 10px;
+
+}
+.photoWall{
+
+  position: relative;
+
+}
+.menuside{
+
+font-size: 0.52em!important;
+}
+
+.gCompte{
+
+  position: absolute;
+  bottom: 50px;
+  font-size: 0.45em;
+  color: black;
+  z-index: 50;
+  left: 30px;
+
+  &:before{
+
+    content: url(http://37.187.20.195/~streetzer/layout/img/roulette.png);
+    margin: 0 10px 0  0;
+  }
+
+}
+.decolink{
+list-style: none; 
+position: absolute; 
+bottom: 30px;
+z-index:50;
+font-size: 0.45em;
+color: black;
+left: 30px;
+
+  &:before{
+
+    content: url(http://37.187.20.195/~streetzer/layout/img/power.png);
+    margin: 0 12px 0  0;
+  }
+
+}
+.selectFlux{
+
+  position: fixed;
+  display: none;
+  left: 250px;
+  z-index: 2;
+  top: 25px;
+  font-size: 35px;
+  width: 500px;
+  border-bottom: 1px solid black;
+  a{
+    color: black;
+font-family: "franklin-gothic-urw",sans-serif;
+font-weight: 100;
+text-decoration: none;
+  }
+  .active{
+    font-weight: 300;
+  }
+  .inactive{
+    color: #CCCCCC;
+  }
+}
+.infoPost{
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6)
+}
+
+.infoPostContainer{
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid white;
+
+  p{
+    font-size: 0.8em;
+    margin: 10px 0 0 0;
+  }
+  ul{
+    float: right;
+
+
+  }
+}
+.hcContainer{
+  margin: -15px 44px 0 0;
+  float: right;
+  display: inline-block;
+
+  li{
+    float: left;
+  }
+  #coeur{
+
+    
+    &:before{
+    margin: 0 20px 0 0;
+    content: url(http://37.187.20.195/~streetzer/layout/img/coeur_petit.png);
+
+    }
+  }
+  #comments{
+
+    cursor: pointer;
+    &:before{
+
+      content: url(http://37.187.20.195/~streetzer/layout/img/comments_petit.png);
+    }
+  }
+
+}
+.front_scroller{
+
+  min-width: auto;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  
+}
+.ppBg{
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('http://37.187.20.195/~streetzer/layout/img/profilpicmax.jpg')center center;
+  z-index: 1;
+  background-size: cover;
+}
+.overlayPp{
+width: 100%;
+height: 100%;
+position: absolute;
+background: rgba(0,0,0,0.6);
+z-index: 2;
+
+}
+.nameSurname{
+  text-align: center;
+  position: relative;
+  position: relative;
+  z-index: 3;
+  top: 40%;
+  .pseudo{
+
+    font-size: 0.8em;
+
+  }
+  .realname{
+    font-size: 0.5em;
+  }
+}
+.blocMessage{
+width:100%; 
+background: url(http://37.187.20.195/~streetzer/layout/img/addpicture.jpg)center center;  
+
+position: relative;
+
+height: 33.33333%;
+overflow: hidden;
+
+form{
+
+  width: 0;
+  height: 0;
+
+}
+input[type="text"]{
+  width: 140px; 
+  height: 20px; 
+  background: white;
+  border: none;
+  resize: none;
+  display: none;
+  z-index: 49;
+  position: absolute;
+  bottom: 0;
+  font-size: 0.5em;
+  width: 100%;
+  height: 46px;
+  color: black;
+}
+button[type="submit"]{
+  width: 210px; 
+  height: 20px; 
+  background: transparent;
+  border: none;
+  resize: none;
+  display: none;
+  z-index: 50;
+  position: absolute;
+}
+}
+
+.clearfix{
+
+  clear: both;
+}
+@media screen and (max-height: 600px){
+
+  .posts{
+
+  }
+}
+.posts{
+
+  width: 100%;
+  height: 100%;
+ 
+  color: white;
+
+    
+  li{
+    //width:350px;
+    height: 90%;
+
+  
+    position: relative;
+    margin: 0 0 5px 0;
+    display: block;
+      
+
+  }   
+}
+
+//Renvoi d'erreur de connexion
+.wronglog:before{
+  font-family: "franklin-gothic-urw",sans-serif;
+  content: "Mot de passe ou adresse email invalide";
+  
+  width: 200px;
+  color: white;
+  font-size: 1.6em;
+  height: 30px;
+}
+/*********
+End home page
+*********/
+/*********
+Chat
+*********/
+
+.listAmisChat{
+
+  width: 200px;
+  height: 253px;
+  border: 1px solid;
+  position: relative;
+  //position: fixed;
+  //right :0;
+  float: right;
+  background: white;
+  z-index: 11;
+  //bottom: 0;
+}
+.masterContainerConvers{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 260px;
+  z-index: 11;
+  
+  
+
+}
+.containerConvers{
+
+  width: 260px;
+  height: 206px;
+  background: white;
+  //display: none;
+  position: relative;
+  float: right;
+  
+  z-index: 20;
+  margin: 10% 0 40px 0;
+  
+  h1{
+      width: 100%;
+      border: 1px solid red;
+      float: left;
+
+    }
+}
+
+
+
+
+
+.contentConvers{
+ 
+  height: 80%;
+  width: 55%;
+  
+  font-family: "franklin-gothic-urw";
+  float: left;
+  overflow-y: auto;
+
+  p{
+
+    word-wrap: break-word;
+  }
+
+}
+
+.formSendMess{
+  width: 100%;
+  height: 27px;
+  position: relative;
+  float: left;
+  bottom: 20%;
+  background: white;
+
+  
+
+  input{
+       width: 64%;
+      height: 20px;
+      float: right;
+      margin: 0 5% 0 0;
+      border:1px solid;
+      
+
+  }
+  
+}
+
+.headerMess{
+font-family: 'franklin-gothic-urw';
+  color: black;
+  font-size: 2em;
+}
+.listeInsideOnline{
+
+
+  font-family: "franklin-gothic-urw",sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+a{
+  text-decoration: none; 
+  color: black;
+  position: relative;
+  top: 33px;
+}
+li{
+
+
+  height: 50px;
+  height: 50px;
+  font-size: 0.9em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 5% 0 0 0;
+  width: 84%;
+
+}
+}
+
+.stackChat{
+  position: relative;
+  float: right;
+  width: 50px;
+  max-height: 30px;
+  background: red;
+  z-index: 10;
+  overflow: hidden;
+  margin: 230px 0 0 0;
+}
+.hChat{
+
+  font-family: 'flood-std',sans-serif;
+  a{
+   color: #ECECEC;
+  text-decoration: none; 
+  }
+  
+}
+.pseudoChat{
+
+  color:white!important;
+  background: #3e3e3e!important;
+  padding: 10px;
+  font-size: 1.4em;
+}
+.insideStack{
+
+  width: 100%;
+  height: 100%;
+  background: salmon;
+  display: none;
+
+  ul{
+    width: 100%;
+    height: 100%;
+  }
+  p{
+    position: relative;
+    bottom: 0;
+    z-index: 30;
+  }
+
+}
+
+.liDis{
+
+ // direction: rtl;
+  position: relative; 
+  margin: 10px 0 0 0;
+  display:block;
+  height: auto!important;
+  background: transparent;
+  p{
+ 
+ 
+  padding: 3px;
+  ///direction:ltr;
+  //text-align:right;
+
+  span{
+    border-radius: 20px;
+    padding: 5px;
+    color:black;
+ 
+  }
+
+  }
+}
+
+.liCurr{
+  position: relative;
+  margin: 10px 0 0 0;
+  display:block;
+     height: auto!important;
+  background: transparent;
+
+  p{
+
+  padding: 3px;
+  direction:ltr;
+  text-align:left;
+
+   span{
+    border-radius: 20px;
+     padding: 5px;
+    color: black; 
+  }
+  }
+}
+.imgPost{
+
+  background-size: cover!important;
+  font-family: "proxima-nova",sans-serif;
+  overflow: hidden;
+
+  &:hover{
+
+    cursor: url(http://37.187.20.195/~streetzer/layout/img/loupe.png);
+  }
+  
+}
+
+.bigOne{
+
+  height: 99.8%!important;
+
+}
+
+.pictoComm:before{
+  position: absolute;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  content: url('http://37.187.20.195/~streetzer/layout/img/comments_add_form.png');
+}
+.spacerPost{
+  height: 45%;
+  position: relative;
+  width: 100%;
+}
+.author{
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.frontContent{
+
+  width: 100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5)
+}
+.frontContentNews{
+
+  width: 100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.5)
+}
+
+.contentPost{
+  position: relative;
+  width: 80%;
+  font-weight: 100;
+  font-size: 2em;
+  color: white;
+  font-wieght: 600;
+  text-transform: uppercase;
+
+  p{
+
+    width: 400px;
+     word-wrap: break-word;
+  }
+
+}
+.hov{
+
+  display: none;
+  ul{
+
+    background: transparent;
+    position: absolute;
+    right: 0;
+
+
+    li{
+
+      background: transparent;
+    }
+  }
+}
+.stick,.showPostComment,.delete{
+
+
+  cursor: pointer;
+  width: 45px; 
+  height: 45px;
+  float: left;
+}
+.predeleteConvers{
+  background: rgba(0,0,0,0.6);
+  position: relative;
+  top: 55px;
+
+    cursor: pointer;
+  width: 45px; 
+  height: 45px;
+  float: left;
+}
+.deleteConvers{
+
+  float: right;
+  position: relative!important;
+  top: 6px!important;
+   z-index: 100;
+  
+}
+.containerPicto{
+
+  width: 45px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+
+}
+.stick{
+  background: rgba(0,0,0,0.6);
+}
+.delete{
+  background: rgba(0,0,0,0.6);
+  position: relative;
+  top: 55px;
+}
+.stick:before{
+  
+  //background: url('http://37.187.20.195/~streetzer/layout/img/coeur_add_like.png')no-repeat;
+
+  
+}
+.a:before{
+content: url('http://37.187.20.195/~streetzer/layout/img/coeur_add_like.png');
+}
+.b:before{
+content: url('http://37.187.20.195/~streetzer/layout/img/coeur_existing_like.png');
+}
+.deletePicto:before{
+content: url('http://37.187.20.195/~streetzer/layout/img/closecross.png');
+position: relative;
+top: 10px;
+left: 10px;
+
+}
+.showPostInput{
+  
+  
+  background: rgba(0,0,0,0.6);
+  width: 445px;
+  height: 45px;
+  background-size: 40px 40px;
+  position: relative;
+  top: 50px;
+  input{
+
+    width: 80%;
+    height: 30px;
+    border: none;
+    margin: 5px 0 0 0;
+    //border-bottom: 1px solid white;
+    background: rgba(255,255,255,0);
+    color: white;
+    &:focus{
+
+      outline: 0;
+    }
+  }
+}
+.showPostInpu{
+
+  content: url('http://37.187.20.195/~streetzer/layout/img/comments_add_form.png');
+}
+.showProfile{
+ 
+  cursor: pointer;
+  width: 200px;
+  text-transform: uppercase;
+}
+.notifs, .notifsMessages{
+
+  width: 25px;
+  height: 25px;
+  background: url(http://37.187.20.195/~streetzer/layout/img/notifOff.svg)no-repeat;
+  position: absolute;
+  right: 25px;
+  z-index: 10;
+  cursor: pointer;
+}
+.notifsMessages{
+
+
+  background: url(http://37.187.20.195/~streetzer/layout/img/notifMessageOn.png)no-repeat;
+  right: 0px;
+
+
+}
+.counter{
+
+  font-weight: 600;
+  font-size: 0.8em;
+  text-align: center;
+  position: absolute;
+  top: 1px;
+  left: 25px;
+}
+
+.postContainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.commentsPlace{
+
+  width: 86%;
+  height: 89%;
+  left: 24px;
+  top: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  display: none;
+  z-index: 10;
+
+
+  h1{
+    font-family: "franklin-gothic-urw";
+    color: white;
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+    padding: 0 0 3px 0; 
+  }
+
+}
+
+.listComments{
+  font-family: "franklin-gothic-urw";
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  color: white;
+
+  ul{
+      background: transparent;
+    li{
+      background: transparent;
+      border-bottom: 1px solid rgba(0,0,0,0.6);
+      padding: 8px 0 8px 0; 
+    }
+  }
+}
+.send{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  input[type="text"]{
+    height: 40px;
+    width: 70%;
+    font-size: 1.5em;
+    background: rgba(0,0,0,0.6);
+    border: none;
+    color: white;
+    font-family: tahoma;
+    border-bottom: 1px solid #ECECEC;
+  }
+   input[type="submit"]{
+    height: 40px;
+    width: 25%;
+    font-size: 1.5em;
+  }
+}
+.seeProfil{
+  font-size: 0.7em!important;
+
+}
+
+#render{
+
+ 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  display: none;
+  background-size: cover!important;
+  
+  
+
+}
+
+.sidebar{
+
+      text-transform: uppercase;
+      font-size: 1.8em;
+    }
+
+.detailsProfil{
+
+    position: absolute;
+    top: 40%;
+    
+    font-family: "franklin-gothic-urw",sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 100;
+
+    }
+  .newsLane{
+
+    margin: 8px 0 0 0;
+  }
+.tableau_bord{
+    
+    position: absolute;
+    z-index: 10;
+    font-size: 0.45em;
+    text-transform: none;
+    bottom: 5px;
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+
+  
+    &:before{
+
+      content: url(http://37.187.20.195/~streetzer/layout/img/tableau_bord_picto.png);
+      margin: 0 5px 0 0;
+    }
+
+}
+.borderRed{
+
+background: #ff4a52;
+position: absolute;
+top: 0;
+width: 161.5%;
+height: 2px;
+
+
+left: -20px;
+}
+
+ .ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    color: black;
+  }
+  /* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+  * html .ui-autocomplete {
+    height: 100px;
+  }
+  .ui-autocomplete-loading {
+    background: white url('images/ui-anim_basic_16x16.gif') left center no-repeat;
+  }
+
+
+  .writenew{
+
+    width: 27%;
+    background: #ff4a52;
+    color: white;
+    float: left;
+    font-size: 1.2em;
+    padding: 9px;
+
+  }
+  .friendlist{
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid;
+  margin: 3% 0 0 2%;
+  height: 20%;
+  font-size: 1em!important;
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-weight: 100;
+
+    &:focus{
+
+      outline: none;
+    }
+
+  }
+  .containInputSearch{
+
+    margin: 10% 0 0 0;
+  }
+  .newMessagefromSuggest{
+
+    textarea{
+
+      margin: 5px 0 0 0px;
+    }
+  }
+
+  .mainBloc{
+  
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(http://37.187.20.195/~streetzer/layout/img/bgbox.jpg);
+    width: 650px;
+    height: 450px;
+    -moz-box-shadow: 0px 0px 34px #000000;
+    -webkit-box-shadow: 0px 0px 34px #000000;
+    box-shadow: 0px 0px 34px #000000;
+
+  }
+
+
+.containSpinner{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 50;
+  left: 0;
+}
+.spinner{
+  
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(http://37.187.20.195/~streetzer/layout/img/spinner.gif)no-repeat;
+}
+
+.msgbox{
+
+  width: 82%;
+}
+
+.container_interact_streetlane{
+
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+  height: 10%;
+  background: black;
+}
+
+.add_mobile_photo{
+
+ 
+  float: left;
+  height: 100%;
+  width: 20%;
+  background: grey;
+
+}
+
+.show_mobile_main{
+
+  
+  float: left;
+  height: 100%;
+  width: 60%;
+  background: green;
+
+}
+.add_mobile_map{
+
+ 
+  float: left;
+  height: 100%;
+  width: 20%;
+  background: red;
+
+}
+
+.ctnForm{
+
+  position: absolute;
+  z-index: 999;
+  top: 0;
+}

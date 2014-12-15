@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/jui.css">
+      
+        <!-- LESS -->
+        <link rel="stylesheet/less" type="text/css" href="../css/style.less" />
+
+        <!-- JS -->
+        <script src="http://37.187.20.195/~streetzer/js/jquery.js"></script>
+        <script src="http://37.187.20.195/~streetzer/js/juimin.js"></script>
+        <script src="http://37.187.20.195/~streetzer/js/placeholder.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="http://37.187.20.195/~streetzer/js/less.js"></script>
+
+
+         <!-- Typekit -->
+        <script type="text/javascript" src="//use.typekit.net/urg7ofy.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+      
+    </head>
+    <body>
+<script>
+        $.mobile.allowCrossDomainPages = true
+    </script>
+<div class="sidebar">
+
+<div class="welcomeUser">
+<div class="notifs"></div>
+<div class="notifsMessages"></div>
+<div class="overlayPp"></div>
+<div class="ppBg"></div>
+<div class="tableau_bord"><a href="#">Mon tableau de bord</a></div>
+<!--<div data-id='<?php echo $_SESSION['id']; ?>' class="nameSurname"><p class="pseudo"><?php echo "".$_SESSION["pseudo"]."" ?></p><p class="realname"><?php echo "".$_SESSION["prenom"]." ".$_SESSION["nom"]."";?></p></div>-->
+		
+</div>
+<!--
+<div class="blocMessage">
+
+
+
+<output style='position: absolute; margin-left: 10px;' id='filesInfo'></output>
+<div id="jti"  style='width:157px; height:210px;margin: 0 0 0 9px; overflow:hidden; background-repeat: no-repeat;'>
+<div class="containSpinner"><div class="spinner"></div></div>
+<input type='file' id='imgInp' accept='image/*' name='postImg' style='font-size:600px; opacity:0; -moz-opacity:0; filter:alpha(opacity=0); float:right; cursor:pointer' />
+<output id='filesInfo'></output>
+<iframe id='ifr1' name='send' style='width:1px; height:1px;'></iframe>
+
+</div>
+<input class="ctnForm" type="text" placeholder="Entrez votre message..." name="contenu"></input>	
+
+<img id="render" src="../layout/img/pisdead.png" alt="your image" />
+
+     
+<div class="clearfix"></div>
+
+
+</div>
+-->
+
+<script>
+<?php echo ' msg = '.json_encode($_SESSION['id']).';'; ?>
+ doctype = sessionStorage.setItem('globalArrayValue',<?php echo json_encode($_SESSION['id']) ?>);
+
+</script>
+<ul style="background: #3e3e3e;" class="sidebar menuside">
+
+<li class="choixLane">STREETLANE</li>
+<li class="photoWall">LIKES</li>
+<li class="showMessages">MESSAGES</li>
+
+</ul>
+<div class="logOut"><a href="#">LOGOUT</a></div>
+</div>
+
+
+
+<div class="front_scroller">
+<img id="render" src="../layout/img/pisdead.png" alt="your image" />
+<input class="ctnForm" type="text" placeholder="Entrez votre message..." name="contenu"></input>
+<ul class='posts'>
+
+
+	
+
+</ul>
+
+</div>
+<div class="clearfix"></div>
+
+<!--
+<div class="masterContainerConvers">
+<div class="listAmisChat">
+	<h3 class="hChat"><a href="">Liste des amis en ligne</a></h3>
+	<ul class="listeInsideOnline">
+		
+	</ul>
+</div>
+-->
+    </body>
+</html>
