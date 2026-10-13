@@ -5,3 +5,5 @@ inc.connexion.php
 /bug
 /awstats-icon
 /awstatsicons
+/public/uploads/*
+!/public/uploads/.gitkeep
