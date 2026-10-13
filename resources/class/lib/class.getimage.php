@@ -7,7 +7,7 @@ var $set_extension;
 var $quality;
 var $name;
 
-function download($method = 'curl',$pp,$quali=100) // default method: cURL
+function download($method = 'curl', $pp = 'pp', $quali = 100) // default method: cURL
 {
 $this->name = $pp;
 $info = @GetImageSize($this->source);
