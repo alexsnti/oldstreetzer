@@ -6,7 +6,7 @@ class Connexion{
 	private $identifiant;
 	private $motdepasse;
 
-	function __construct($_identifiant, $_motdepasse){
+	function __construct($_identifiant = null, $_motdepasse = null){
 
 	$this->identifiant = $_identifiant;
 	$this->motdepasse = $_motdepasse;
@@ -22,7 +22,6 @@ class Connexion{
 			//Je compte les lignes en sortie de requete
 			$row = mysql_num_rows($res);
 			$array = mysql_fetch_array($res);
-			var_dump($row);
 
 			//Si il y en a qu'une, je connecte l'utilisateur
 			if($row == 1){

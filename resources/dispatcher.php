@@ -2,10 +2,10 @@
 session_start();
 require 'def.php';
 
-$class = $_POST['clas'];
-$paramsClass = json_decode($_POST['paramsClass'],true);
-$method = $_POST['method'];
-$params = json_decode($_POST["params"], true);
+$class = $_POST['clas'] ?? '';
+$paramsClass = json_decode($_POST['paramsClass'] ?? 'null', true);
+$method = $_POST['method'] ?? '';
+$params = json_decode($_POST['params'] ?? 'null', true);
 
 
 /******
@@ -69,8 +69,11 @@ if($_SESSION["spamvar"] > 11 ){
 }
 
 require "class/class.".$class.".php";
-$c = new $class($paramsClass);
-$c->$method($params);
+$ctor = (new ReflectionClass($class))->getConstructor();
+$c = ($ctor && $ctor->getNumberOfParameters() > 0)
+	? new $class($paramsClass ?? array())
+	: new $class();
+$c->$method($params ?? array());
 
 
 ?>
